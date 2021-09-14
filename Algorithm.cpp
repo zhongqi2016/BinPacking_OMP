@@ -16,20 +16,20 @@ void skipDetermined(std::vector<Bin> &w, int &z) {
 }
 
 
-void calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int LB, int c,int &num_threads) {
+void calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int LB, int c, int &num_threads) {
     std::vector<Bin> *_solution = NULL;
     std::vector<Bin> solution_UB;
     bool isBreak = true;
-//    printf("id:%d\n",omp_get_thread_num());
+    printf("id:%d\n", omp_get_thread_num());
     while (!s.empty() && isBreak) {
-        if (UB==LB) isBreak= false;
+        if (UB == LB) isBreak = false;
         DataForCalc node = s.top();
         s.pop();
         int &z = node.z;
         int &z_reduction = node.z_reduction;
         std::vector<Bin> &now = node.current;
         skipDetermined(now, ++z);
-        if (z == now.size() || now[z].sum == 0) isBreak= false;
+        if (z == now.size() || now[z].sum == 0) isBreak = false;
         int i = z;
         //create a new bin
 
@@ -45,6 +45,7 @@ void calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int L
             int UB_current = bestFit(current, c, solution_UB) + zr;
 
             if (UB_current == LB) {
+#pragma omp atomic write
                 UB = UB_current;
                 delete _solution;
                 _solution = &solution_UB;
@@ -52,6 +53,7 @@ void calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int L
                 isBreak = false;
             }
             if (UB > UB_current) {
+#pragma omp atomic write
                 UB = UB_current;
                 delete _solution;
                 _solution = &solution_UB;
@@ -89,6 +91,7 @@ void calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int L
                 int UB_current = bestFit(current, c, solution_UB) + zr;
 
                 if (UB_current == LB) {
+#pragma omp atomic write
                     UB = UB_current;
                     delete _solution;
                     _solution = &solution_UB;
@@ -97,6 +100,7 @@ void calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int L
 //                    return UB_current;
                 }
                 if (UB > UB_current) {
+#pragma omp atomic write
                     UB = UB_current;
                     delete _solution;
                     _solution = &solution_UB;
@@ -119,12 +123,14 @@ void calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int L
 //        printf("%d\n", omp_get_num_threads());
         while (omp_get_max_threads() - num_threads > 0 && s.size() > 1) {
 //            printf("o %d\n",omp_get_max_threads() - num_threads);
-            DataForCalc data=s.top();
+            DataForCalc data = s.top();
             std::stack<DataForCalc> s2;
             s2.push(std::move(data));
             s.pop();
-#pragma omp task  shared(UB,num_threads,solution) firstprivate(s2, c, LB)  default(none)
-            calc(s2,solution,UB,LB,c,num_threads);
+#pragma omp task  shared(UB, num_threads, solution) firstprivate(s2, c, LB)  default(none)
+            calc(s2, solution, UB, LB, c, num_threads);
+
+#pragma omp atomic update
             ++num_threads;
         }
     }
@@ -137,6 +143,7 @@ void calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int L
 
 
 int BNB(DataInput data) {
+    omp_set_nested(1);
     std::vector<Bin> *solution = NULL;
     std::vector<int> &items = data.w;
     std::vector<Bin> binList = refactor(items);
@@ -168,13 +175,13 @@ int BNB(DataInput data) {
     s.push(initData2(binList, z, z_res));
 //    std::vector<Bin> res_calc;
 
-int num_thread=1;
-#pragma omp parallel
+    int num_thread = 1;
+#pragma omp parallel num_threads(8)
     {
 #pragma omp single
         {
-            printf("%d\n",  omp_get_num_procs());
-            calc(s, *solution, UB, L3, c,num_thread);
+            printf("%d\n", omp_get_num_procs());
+            calc(s, *solution, UB, L3, c, num_thread);
         }
     }
 //    if (solution->size() == 0) {
