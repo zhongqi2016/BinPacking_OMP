@@ -11,10 +11,6 @@ CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o: \
 CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o: \
  ../Bin.cpp \
  ../Bin.h
-CMakeFiles/BinPacking_OMP.dir/DataInput.cpp.o: \
- ../Bin.h \
- ../DataInput.cpp \
- ../DataInput.h
 CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o: \
  ../Bin.h \
  ../LowerBound.cpp \

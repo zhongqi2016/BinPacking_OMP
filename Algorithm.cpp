@@ -134,7 +134,6 @@ int BNB(DataInput data) {
     std::vector<int> &items = data.w;
     std::sort(items.rbegin(), items.rend());
     std::list<Bin> binList = refactor(items);
-    //    bin_print(binList);
     int c = data.c;
 
     int LB = lowerBound2(binList, c);
@@ -144,7 +143,7 @@ int BNB(DataInput data) {
     if (LB == UB) {
         binOrganize(solution_UB, items);
         solution = &solution_UB;
-        bin_print(*solution);
+//        bin_print(*solution);
         return LB;
     }
     int L3 = lowerBound3(binList, c);
@@ -152,7 +151,7 @@ int BNB(DataInput data) {
     if (L3 == UB) {
         binOrganize(solution_UB, items);
         solution = &solution_UB;
-        bin_print(*solution);
+//        bin_print(*solution);
         return L3;
     }
     int z = 0;
@@ -171,7 +170,7 @@ int BNB(DataInput data) {
     }
 
     binOrganize(*solution, items);
-    bin_print(*solution);
+//    bin_print(*solution);
     return solution->size();
 }
 

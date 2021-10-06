@@ -46,25 +46,42 @@ DataInput getData(const string &filename) {
 }
 
 
-
 int main() {
-    omp_set_num_threads(8);
-//    printf("%d\n", omp_get_max_threads() - omp_get_num_threads());
+    //The folder where the test sample is located
     string path = "./bin1data/";
+    //The number of threads to be tested
+    array<int, 5> threads = {1, 2, 4, 8, 16};
+
+    printf("Filename    ");
+    for (int th:threads) {
+        printf("    Time%d",th);
+    }
+    printf("  Result\n");
+
     vector<string> files = readFileDir(path);
     for (int i = 0; i < files.size(); ++i) {
-//        if (i==10||i==11) continue;
-        printf("%d. filename: %s\n", i, files[i].c_str());
-        string fileName = path;
-        fileName.append(files[i]);
-        DataInput data = getData(fileName);
-        clock_t start, end;
-        start = clock();
+        int result=-1;
+        printf("%s", files[i].c_str());
+        for (int th:threads) {
+            omp_set_num_threads(th);
+//
+            string fileName = path;
+            fileName.append(files[i]);
+            DataInput data = getData(fileName);
+            double start, end;
+            start = omp_get_wtime();
 
-        int result = BNB(data);
-        end = clock();
-        double time = (double) (end - start) / CLOCKS_PER_SEC;
-        printf("Number of bins needed = %d\nTime=%lf\n", result, time);
+            int res = BNB(data);
+            end = omp_get_wtime();
+            if (result==-1){
+                result=res;
+            } else if(result!=res){
+                printf(" error");
+            }
+            double time = (double) (end - start);
+            printf(" %lf", time);
+        }
+        printf(" %d\n",result);
     }
 
     return 0;
