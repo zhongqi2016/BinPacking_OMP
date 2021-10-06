@@ -42,18 +42,18 @@ DataInput getData(const string &filename) {
     }
     infile.close();
 
-    return initData(n, c, items);
+    return DataInput(n, c, items);
 }
 
 
 
 int main() {
     omp_set_num_threads(8);
-    printf("%d\n", omp_get_max_threads() - omp_get_num_threads());
-
+//    printf("%d\n", omp_get_max_threads() - omp_get_num_threads());
     string path = "./bin1data/";
     vector<string> files = readFileDir(path);
     for (int i = 0; i < files.size(); ++i) {
+//        if (i==10||i==11) continue;
         printf("%d. filename: %s\n", i, files[i].c_str());
         string fileName = path;
         fileName.append(files[i]);

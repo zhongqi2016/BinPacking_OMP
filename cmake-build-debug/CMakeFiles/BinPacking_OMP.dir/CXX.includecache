@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Algorithm.cpp
-Algorithm.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Algorithm.h
-
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Algorithm.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.h
 vector
 -
 algorithm
@@ -23,54 +19,40 @@ dirent.h
 -
 stack
 -
-UpperBound.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
-LowerBound.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
-DataInput.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/DataInput.h
-Bin.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Bin.h
-
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Bin.cpp
-cstdio
+omp.h
 -
+UpperBound.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
+LowerBound.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
+DataInput.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/DataInput.h
 Bin.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Bin.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
 
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Bin.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
 list
 -
 vector
 -
 Bin.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Bin.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
 
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/DataInput.cpp
-DataInput.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/DataInput.h
-
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/DataInput.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/DataInput.h
 Bin.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Bin.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
 
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/LowerBound.cpp
-LowerBound.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
-
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
 Bin.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Bin.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
 algorithm
 -
 
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/UpperBound.cpp
-cstdio
--
-UpperBound.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
-
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
 Bin.h
-/Users/wuzhongqi/CLionProjects/BinPacking_OMP/Bin.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
+
+/home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp
+Algorithm.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.h
 

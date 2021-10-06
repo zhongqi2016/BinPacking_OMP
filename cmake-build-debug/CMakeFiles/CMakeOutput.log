@@ -1,6 +1,6 @@
-The system is: Darwin - 20.6.0 - arm64
+The system is: Linux - 5.4.0-81-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /opt/homebrew/Cellar/gcc/11.1.0_1/bin/gcc-11 
+Compiler: /usr/bin/gcc-9 
 Build flags: 
 Id flags:  
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /opt/homebrew/Cellar/gcc/11.1.0_1/bin/g++-11 
+Compiler: /usr/bin/g++-9 
 Build flags: 
 Id flags:  
 
@@ -23,410 +23,791 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/a.out"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_174e6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_174e6.dir/build.make CMakeFiles/cmTC_174e6.dir/build
-Building C object CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o
-/opt/homebrew/Cellar/gcc/11.1.0_1/bin/gcc-11   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -v -Wl,-v -o CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a4bac/fast && /usr/bin/make  -f CMakeFiles/cmTC_a4bac.dir/build.make CMakeFiles/cmTC_a4bac.dir/build
+make[1]: Entering directory '/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc-9   -v -o CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o -c /snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c
 Using built-in specs.
-COLLECT_GCC=/opt/homebrew/Cellar/gcc/11.1.0_1/bin/gcc-11
-Target: aarch64-apple-darwin20
-Configured with: ../configure --prefix=/opt/homebrew/Cellar/gcc/11.1.0_1 --libdir=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11 --disable-nls --enable-checking=release --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.1.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin20 --with-system-zlib --disable-multilib --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+COLLECT_GCC=/usr/bin/gcc-9
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 11.1.0 (Homebrew GCC 11.1.0_1) 
-COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_174e6.dir/'
- /opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/cc1 -quiet -v -D__DYNAMIC__ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCCompilerABI.c -fPIC -quiet -dumpdir CMakeFiles/cmTC_174e6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mmacosx-version-min=11.5.0 -mlittle-endian -mabi=lp64 -version -o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccnnyeAK.s
-GNU C17 (Homebrew GCC 11.1.0_1) version 11.1.0 (aarch64-apple-darwin20)
-	compiled by GNU C version 11.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccrQCZhU.s
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include"
-ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../aarch64-apple-darwin20/include"
-ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/Library/Frameworks"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed
- /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include
- /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
 End of search list.
-GNU C17 (Homebrew GCC 11.1.0_1) version 11.1.0 (aarch64-apple-darwin20)
-	compiled by GNU C version 11.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 41b0656433a312e6a24307d675ab7251
-COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_174e6.dir/'
- as -arch arm64 -v -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccnnyeAK.s
-Apple clang version 12.0.5 (clang-1205.0.22.11)
-Target: aarch64-apple-darwin20.6.0
-Thread model: posix
-InstalledDir: /Library/Developer/CommandLineTools/usr/bin
- "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx11.5.0 -filetype obj -main-file-name ccnnyeAK.s -target-cpu apple-a12 -target-feature +v8.3a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +fullfp16 -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -fdebug-compilation-dir /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 12.0.5 (clang-1205.0.22.11)" -dwarf-version=4 -mrelocation-model pic -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccnnyeAK.s
-COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/
-LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../
-COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.'
-Linking C executable cmTC_174e6
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_174e6.dir/link.txt --verbose=1
-/opt/homebrew/Cellar/gcc/11.1.0_1/bin/gcc-11  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o -o cmTC_174e6 
+Compiler executable checksum: 0fa2a01b1ef16377fce6a0bcb60fb82d
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o /tmp/ccrQCZhU.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_a4bac
+/snap/clion/163/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4bac.dir/link.txt --verbose=1
+/usr/bin/gcc-9  -v CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o -o cmTC_a4bac 
 Using built-in specs.
-COLLECT_GCC=/opt/homebrew/Cellar/gcc/11.1.0_1/bin/gcc-11
-COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/lto-wrapper
-Target: aarch64-apple-darwin20
-Configured with: ../configure --prefix=/opt/homebrew/Cellar/gcc/11.1.0_1 --libdir=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11 --disable-nls --enable-checking=release --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.1.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin20 --with-system-zlib --disable-multilib --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+COLLECT_GCC=/usr/bin/gcc-9
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 11.1.0 (Homebrew GCC 11.1.0_1) 
-COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/
-LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../
-COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'cmTC_174e6' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_174e6.'
- /opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/collect2 -dynamic -arch arm64 -macosx_version_min 11.5.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_174e6 -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o -lgcc_s.1.1 -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -v
-collect2 version 11.1.0
-/usr/bin/ld -dynamic -arch arm64 -macosx_version_min 11.5.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_174e6 -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o -lgcc_s.1.1 -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -v
-@(#)PROGRAM:ld  PROJECT:ld64-650.9
-BUILD 13:09:13 May 28 2021
-configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-@(#)PROGRAM:ld  PROJECT:ld64-650.9
-BUILD 13:09:13 May 28 2021
-configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-Library search paths:
-	/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0
-	/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11
-	/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib
-Framework search paths:
-	/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4bac' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4Nbe6m.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a4bac /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4bac' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include]
-    add: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed]
-    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
-    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
   end of search list found
-  collapse include dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include]
-  collapse include dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed]
-  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
-  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
-  implicit include dirs: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include;/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_174e6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_174e6.dir/build.make CMakeFiles/cmTC_174e6.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/opt/homebrew/Cellar/gcc/11.1.0_1/bin/gcc-11   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -v -Wl -v -o CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_a4bac/fast && /usr/bin/make  -f CMakeFiles/cmTC_a4bac.dir/build.make CMakeFiles/cmTC_a4bac.dir/build]
+  ignore line: [make[1]: Entering directory '/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc-9   -v -o CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o -c /snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/opt/homebrew/Cellar/gcc/11.1.0_1/bin/gcc-11]
-  ignore line: [Target: aarch64-apple-darwin20]
-  ignore line: [Configured with: ../configure --prefix=/opt/homebrew/Cellar/gcc/11.1.0_1 --libdir=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11 --disable-nls --enable-checking=release --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.1.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin20 --with-system-zlib --disable-multilib --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [COLLECT_GCC=/usr/bin/gcc-9]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 11.1.0 (Homebrew GCC 11.1.0_1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_174e6.dir/']
-  ignore line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/cc1 -quiet -v -D__DYNAMIC__ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCCompilerABI.c -fPIC -quiet -dumpdir CMakeFiles/cmTC_174e6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mmacosx-version-min=11.5.0 -mlittle-endian -mabi=lp64 -version -o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccnnyeAK.s]
-  ignore line: [GNU C17 (Homebrew GCC 11.1.0_1) version 11.1.0 (aarch64-apple-darwin20)]
-  ignore line: [	compiled by GNU C version 11.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccrQCZhU.s]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include"]
-  ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../aarch64-apple-darwin20/include"]
-  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/Library/Frameworks"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include]
-  ignore line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed]
-  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
-  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C17 (Homebrew GCC 11.1.0_1) version 11.1.0 (aarch64-apple-darwin20)]
-  ignore line: [	compiled by GNU C version 11.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 41b0656433a312e6a24307d675ab7251]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_174e6.dir/']
-  ignore line: [ as -arch arm64 -v -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccnnyeAK.s]
-  ignore line: [Apple clang version 12.0.5 (clang-1205.0.22.11)]
-  ignore line: [Target: aarch64-apple-darwin20.6.0]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-  ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx11.5.0 -filetype obj -main-file-name ccnnyeAK.s -target-cpu apple-a12 -target-feature +v8.3a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +fullfp16 -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -fdebug-compilation-dir /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 12.0.5 (clang-1205.0.22.11)" -dwarf-version=4 -mrelocation-model pic -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccnnyeAK.s]
-  ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/]
-  ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=11.5.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.']
-  ignore line: [Linking C executable cmTC_174e6]
-  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_174e6.dir/link.txt --verbose=1]
-  ignore line: [/opt/homebrew/Cellar/gcc/11.1.0_1/bin/gcc-11  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o -o cmTC_174e6 ]
+  ignore line: [Compiler executable checksum: 0fa2a01b1ef16377fce6a0bcb60fb82d]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o /tmp/ccrQCZhU.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_a4bac]
+  ignore line: [/snap/clion/163/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4bac.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc-9  -v CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o -o cmTC_a4bac ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/opt/homebrew/Cellar/gcc/11.1.0_1/bin/gcc-11]
-  ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/lto-wrapper]
-  ignore line: [Target: aarch64-apple-darwin20]
-  ignore line: [Configured with: ../configure --prefix=/opt/homebrew/Cellar/gcc/11.1.0_1 --libdir=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11 --disable-nls --enable-checking=release --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.1.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin20 --with-system-zlib --disable-multilib --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [COLLECT_GCC=/usr/bin/gcc-9]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 11.1.0 (Homebrew GCC 11.1.0_1) ]
-  ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/]
-  ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'cmTC_174e6' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_174e6.']
-  link line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/collect2 -dynamic -arch arm64 -macosx_version_min 11.5.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_174e6 -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o -lgcc_s.1.1 -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -v]
-    arg [/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/collect2] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [arm64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [11.5.0] ==> ignore
-    arg [-syslibroot] ==> ignore
-    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk] ==> ignore
-    arg [-weak_reference_mismatches] ==> ignore
-    arg [non-weak] ==> ignore
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4bac' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4Nbe6m.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a4bac /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc4Nbe6m.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_174e6] ==> ignore
-    arg [-L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0] ==> dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0]
-    arg [-L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../..] ==> dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../..]
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_174e6.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lgcc_s.1.1] ==> lib [gcc_s.1.1]
+    arg [cmTC_a4bac] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_a4bac.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
-    arg [-lSystem] ==> lib [System]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
-    arg [-no_compact_unwind] ==> ignore
-    arg [-rpath] ==> ignore
-    arg [@loader_path] ==> ignore
-    arg [-rpath] ==> ignore
-    arg [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0] ==> ignore
-    arg [-rpath] ==> ignore
-    arg [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../..] ==> ignore
-    arg [-v] ==> ignore
-  Library search paths: [;/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0;/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
-  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/]
-  remove lib [System]
-  collapse library dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0]
-  collapse library dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../..] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11]
-  collapse library dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0]
-  collapse library dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11]
-  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
-  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
-  implicit libs: [gcc_s.1.1;gcc;gcc]
-  implicit objs: []
-  implicit dirs: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0;/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
-  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_e6efc/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e6efc.dir/build.make CMakeFiles/cmTC_e6efc.dir/build
-Building CXX object CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o
-/opt/homebrew/Cellar/gcc/11.1.0_1/bin/g++-11   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -v -Wl,-v -o CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c3995/fast && /usr/bin/make  -f CMakeFiles/cmTC_c3995.dir/build.make CMakeFiles/cmTC_c3995.dir/build
+make[1]: Entering directory '/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++-9   -v -o CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
-COLLECT_GCC=/opt/homebrew/Cellar/gcc/11.1.0_1/bin/g++-11
-Target: aarch64-apple-darwin20
-Configured with: ../configure --prefix=/opt/homebrew/Cellar/gcc/11.1.0_1 --libdir=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11 --disable-nls --enable-checking=release --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.1.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin20 --with-system-zlib --disable-multilib --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+COLLECT_GCC=/usr/bin/g++-9
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 11.1.0 (Homebrew GCC 11.1.0_1) 
-COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e6efc.dir/'
- /opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/cc1plus -quiet -v -D__DYNAMIC__ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_e6efc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=11.5.0 -mlittle-endian -mabi=lp64 -version -o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccHHj7nh.s
-GNU C++17 (Homebrew GCC 11.1.0_1) version 11.1.0 (aarch64-apple-darwin20)
-	compiled by GNU C version 11.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccn3kPHV.s
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include"
-ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../aarch64-apple-darwin20/include"
-ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/Library/Frameworks"
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/aarch64-apple-darwin20
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/backward
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include
- /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed
- /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include
- /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks
+ /usr/include/c++/9
+ /usr/include/x86_64-linux-gnu/c++/9
+ /usr/include/c++/9/backward
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
 End of search list.
-GNU C++17 (Homebrew GCC 11.1.0_1) version 11.1.0 (aarch64-apple-darwin20)
-	compiled by GNU C version 11.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 8e46952a8ff17c3ad045ff6ddd2a7314
-COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e6efc.dir/'
- as -arch arm64 -v -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccHHj7nh.s
-Apple clang version 12.0.5 (clang-1205.0.22.11)
-Target: aarch64-apple-darwin20.6.0
-Thread model: posix
-InstalledDir: /Library/Developer/CommandLineTools/usr/bin
- "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx11.5.0 -filetype obj -main-file-name ccHHj7nh.s -target-cpu apple-a12 -target-feature +v8.3a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +fullfp16 -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -fdebug-compilation-dir /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 12.0.5 (clang-1205.0.22.11)" -dwarf-version=4 -mrelocation-model pic -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccHHj7nh.s
-COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/
-LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../
-COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.'
-Linking CXX executable cmTC_e6efc
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6efc.dir/link.txt --verbose=1
-/opt/homebrew/Cellar/gcc/11.1.0_1/bin/g++-11  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e6efc 
+Compiler executable checksum: de81ae2094cd619a4e4415514e80087d
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccn3kPHV.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_c3995
+/snap/clion/163/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3995.dir/link.txt --verbose=1
+/usr/bin/g++-9  -v CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c3995 
 Using built-in specs.
-COLLECT_GCC=/opt/homebrew/Cellar/gcc/11.1.0_1/bin/g++-11
-COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/lto-wrapper
-Target: aarch64-apple-darwin20
-Configured with: ../configure --prefix=/opt/homebrew/Cellar/gcc/11.1.0_1 --libdir=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11 --disable-nls --enable-checking=release --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.1.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin20 --with-system-zlib --disable-multilib --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+COLLECT_GCC=/usr/bin/g++-9
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 11.1.0 (Homebrew GCC 11.1.0_1) 
-COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/
-LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../
-COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'cmTC_e6efc' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e6efc.'
- /opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/collect2 -dynamic -arch arm64 -macosx_version_min 11.5.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_e6efc -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -v
-collect2 version 11.1.0
-/usr/bin/ld -dynamic -arch arm64 -macosx_version_min 11.5.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_e6efc -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -v
-@(#)PROGRAM:ld  PROJECT:ld64-650.9
-BUILD 13:09:13 May 28 2021
-configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-@(#)PROGRAM:ld  PROJECT:ld64-650.9
-BUILD 13:09:13 May 28 2021
-configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-Library search paths:
-	/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0
-	/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11
-	/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib
-Framework search paths:
-	/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3995' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgWOFVm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c3995 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3995' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0]
-    add: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/aarch64-apple-darwin20]
-    add: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/backward]
-    add: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include]
-    add: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed]
-    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
-    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+    add: [/usr/include/c++/9]
+    add: [/usr/include/x86_64-linux-gnu/c++/9]
+    add: [/usr/include/c++/9/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
   end of search list found
-  collapse include dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/include/c++/11.1.0]
-  collapse include dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/aarch64-apple-darwin20] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/include/c++/11.1.0/aarch64-apple-darwin20]
-  collapse include dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/backward] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/include/c++/11.1.0/backward]
-  collapse include dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include]
-  collapse include dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed]
-  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
-  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
-  implicit include dirs: [/opt/homebrew/Cellar/gcc/11.1.0_1/include/c++/11.1.0;/opt/homebrew/Cellar/gcc/11.1.0_1/include/c++/11.1.0/aarch64-apple-darwin20;/opt/homebrew/Cellar/gcc/11.1.0_1/include/c++/11.1.0/backward;/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include;/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+  collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_e6efc/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e6efc.dir/build.make CMakeFiles/cmTC_e6efc.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/opt/homebrew/Cellar/gcc/11.1.0_1/bin/g++-11   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -v -Wl -v -o CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_c3995/fast && /usr/bin/make  -f CMakeFiles/cmTC_c3995.dir/build.make CMakeFiles/cmTC_c3995.dir/build]
+  ignore line: [make[1]: Entering directory '/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++-9   -v -o CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/opt/homebrew/Cellar/gcc/11.1.0_1/bin/g++-11]
-  ignore line: [Target: aarch64-apple-darwin20]
-  ignore line: [Configured with: ../configure --prefix=/opt/homebrew/Cellar/gcc/11.1.0_1 --libdir=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11 --disable-nls --enable-checking=release --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.1.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin20 --with-system-zlib --disable-multilib --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [COLLECT_GCC=/usr/bin/g++-9]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 11.1.0 (Homebrew GCC 11.1.0_1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e6efc.dir/']
-  ignore line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/cc1plus -quiet -v -D__DYNAMIC__ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_e6efc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=11.5.0 -mlittle-endian -mabi=lp64 -version -o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccHHj7nh.s]
-  ignore line: [GNU C++17 (Homebrew GCC 11.1.0_1) version 11.1.0 (aarch64-apple-darwin20)]
-  ignore line: [	compiled by GNU C version 11.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccn3kPHV.s]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include"]
-  ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../aarch64-apple-darwin20/include"]
-  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/Library/Frameworks"]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0]
-  ignore line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/aarch64-apple-darwin20]
-  ignore line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/backward]
-  ignore line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include]
-  ignore line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed]
-  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
-  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  ignore line: [ /usr/include/c++/9]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+  ignore line: [ /usr/include/c++/9/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C++17 (Homebrew GCC 11.1.0_1) version 11.1.0 (aarch64-apple-darwin20)]
-  ignore line: [	compiled by GNU C version 11.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 8e46952a8ff17c3ad045ff6ddd2a7314]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e6efc.dir/']
-  ignore line: [ as -arch arm64 -v -mmacosx-version-min=11.5 -o CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccHHj7nh.s]
-  ignore line: [Apple clang version 12.0.5 (clang-1205.0.22.11)]
-  ignore line: [Target: aarch64-apple-darwin20.6.0]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-  ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx11.5.0 -filetype obj -main-file-name ccHHj7nh.s -target-cpu apple-a12 -target-feature +v8.3a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +fullfp16 -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -fdebug-compilation-dir /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 12.0.5 (clang-1205.0.22.11)" -dwarf-version=4 -mrelocation-model pic -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o /var/folders/x6/jmxw5p4x1c30zhxg3hykkdrw0000gn/T//ccHHj7nh.s]
-  ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/]
-  ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=11.5.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [Linking CXX executable cmTC_e6efc]
-  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6efc.dir/link.txt --verbose=1]
-  ignore line: [/opt/homebrew/Cellar/gcc/11.1.0_1/bin/g++-11  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e6efc ]
+  ignore line: [Compiler executable checksum: de81ae2094cd619a4e4415514e80087d]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccn3kPHV.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_c3995]
+  ignore line: [/snap/clion/163/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3995.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++-9  -v CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c3995 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/opt/homebrew/Cellar/gcc/11.1.0_1/bin/g++-11]
-  ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/lto-wrapper]
-  ignore line: [Target: aarch64-apple-darwin20]
-  ignore line: [Configured with: ../configure --prefix=/opt/homebrew/Cellar/gcc/11.1.0_1 --libdir=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11 --disable-nls --enable-checking=release --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.1.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin20 --with-system-zlib --disable-multilib --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [COLLECT_GCC=/usr/bin/g++-9]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 11.1.0 (Homebrew GCC 11.1.0_1) ]
-  ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/]
-  ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/:/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk' '-v' '-o' 'cmTC_e6efc' '-mmacosx-version-min=11.5.0' '-asm_macosx_version_min=11.5' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e6efc.']
-  link line: [ /opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/collect2 -dynamic -arch arm64 -macosx_version_min 11.5.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -weak_reference_mismatches non-weak -o cmTC_e6efc -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0 -rpath /opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../.. -v]
-    arg [/opt/homebrew/Cellar/gcc/11.1.0_1/libexec/gcc/aarch64-apple-darwin20/11.1.0/collect2] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [arm64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [11.5.0] ==> ignore
-    arg [-syslibroot] ==> ignore
-    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk] ==> ignore
-    arg [-weak_reference_mismatches] ==> ignore
-    arg [non-weak] ==> ignore
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3995' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgWOFVm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c3995 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccgWOFVm.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_e6efc] ==> ignore
-    arg [-L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0] ==> dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0]
-    arg [-L/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../..] ==> dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../..]
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_e6efc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_c3995] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_c3995.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
-    arg [-lgcc_s.1.1] ==> lib [gcc_s.1.1]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lSystem] ==> lib [System]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-no_compact_unwind] ==> ignore
-    arg [-rpath] ==> ignore
-    arg [@loader_path] ==> ignore
-    arg [-rpath] ==> ignore
-    arg [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0] ==> ignore
-    arg [-rpath] ==> ignore
-    arg [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../..] ==> ignore
-    arg [-v] ==> ignore
-  Library search paths: [;/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0;/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
-  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/]
-  remove lib [System]
-  collapse library dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0]
-  collapse library dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../..] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11]
-  collapse library dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0]
-  collapse library dir [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11] ==> [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11]
-  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
-  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
-  implicit libs: [stdc++;gcc_s.1.1;gcc;gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Detecting C OpenMP compiler ABI info compiled with the following output:
+Change Dir: /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4574c/fast && /usr/bin/make  -f CMakeFiles/cmTC_4574c.dir/build.make CMakeFiles/cmTC_4574c.dir/build
+make[1]: 进入目录“/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o
+/usr/bin/gcc-9   -fopenmp -v -o CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/gcc-9
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxz2hGT.s
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 0fa2a01b1ef16377fce6a0bcb60fb82d
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o /tmp/ccxz2hGT.s
+GNU汇编版本 2.34 (x86_64-linux-gnu) 使用BFD版本 (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking C executable cmTC_4574c
+/snap/clion/163/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4574c.dir/link.txt --verbose=1
+/usr/bin/gcc-9  -fopenmp -v CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o -o cmTC_4574c  -v 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/gcc-9
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_4574c' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccim1RTk.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4574c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_4574c' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
+make[1]: 离开目录“/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+
+Parsed C OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_4574c/fast && /usr/bin/make  -f CMakeFiles/cmTC_4574c.dir/build.make CMakeFiles/cmTC_4574c.dir/build]
+  ignore line: [make[1]: 进入目录“/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp”]
+  ignore line: [Building C object CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o]
+  ignore line: [/usr/bin/gcc-9   -fopenmp -v -o CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/gcc-9]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxz2hGT.s]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 0fa2a01b1ef16377fce6a0bcb60fb82d]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o /tmp/ccxz2hGT.s]
+  ignore line: [GNU汇编版本 2.34 (x86_64-linux-gnu) 使用BFD版本 (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking C executable cmTC_4574c]
+  ignore line: [/snap/clion/163/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4574c.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc-9  -fopenmp -v CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o -o cmTC_4574c  -v ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/gcc-9]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_4574c' '-v' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccim1RTk.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4574c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccim1RTk.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_4574c] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_4574c.dir/OpenMPTryFlag.c.o] ==> ignore
+    arg [-lgomp] ==> lib [gomp]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
   implicit objs: []
-  implicit dirs: [/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0;/opt/homebrew/Cellar/gcc/11.1.0_1/lib/gcc/11;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
-  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Detecting CXX OpenMP compiler ABI info compiled with the following output:
+Change Dir: /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_837f0/fast && /usr/bin/make  -f CMakeFiles/cmTC_837f0.dir/build.make CMakeFiles/cmTC_837f0.dir/build
+make[1]: 进入目录“/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o
+/usr/bin/g++-9   -fopenmp -v -o CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/g++-9
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc2pxIdS.s
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/9
+ /usr/include/x86_64-linux-gnu/c++/9
+ /usr/include/c++/9/backward
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: de81ae2094cd619a4e4415514e80087d
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o /tmp/cc2pxIdS.s
+GNU汇编版本 2.34 (x86_64-linux-gnu) 使用BFD版本 (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking CXX executable cmTC_837f0
+/snap/clion/163/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_837f0.dir/link.txt --verbose=1
+/usr/bin/g++-9  -fopenmp -v CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o -o cmTC_837f0  -v 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/g++-9
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_837f0' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccylY58i.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_837f0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_837f0' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+make[1]: 离开目录“/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+
+Parsed CXX OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_837f0/fast && /usr/bin/make  -f CMakeFiles/cmTC_837f0.dir/build.make CMakeFiles/cmTC_837f0.dir/build]
+  ignore line: [make[1]: 进入目录“/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/CMakeTmp”]
+  ignore line: [Building CXX object CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/usr/bin/g++-9   -fopenmp -v -o CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/g++-9]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc2pxIdS.s]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/9]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+  ignore line: [ /usr/include/c++/9/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: de81ae2094cd619a4e4415514e80087d]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o /tmp/cc2pxIdS.s]
+  ignore line: [GNU汇编版本 2.34 (x86_64-linux-gnu) 使用BFD版本 (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking CXX executable cmTC_837f0]
+  ignore line: [/snap/clion/163/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_837f0.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++-9  -fopenmp -v CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o -o cmTC_837f0  -v ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/g++-9]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-yTrUTS/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_837f0' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccylY58i.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_837f0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccylY58i.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_837f0] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_837f0.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgomp] ==> lib [gomp]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit objs: []
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
 
 

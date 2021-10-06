@@ -10,4 +10,4 @@ endif()
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(BinPacking_OMP main.cpp LowerBound.cpp LowerBound.h UpperBound.cpp UpperBound.h DataInput.h DataInput.cpp Algorithm.cpp Algorithm.h Bin.cpp Bin.h)
+add_executable(BinPacking_OMP main.cpp LowerBound.cpp LowerBound.h UpperBound.cpp UpperBound.h DataInput.h Algorithm.cpp Algorithm.h Bin.cpp Bin.h)

@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/wuzhongqi/CLionProjects/BinPacking_OMP
+CMAKE_SOURCE_DIR = /home/zhongqi/CLionProjects/BinPacking_OMP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-deb
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wuzhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,30 +176,6 @@ Bin.s: Bin.cpp.s
 Bin.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bin.cpp.s
 .PHONY : Bin.cpp.s
-
-DataInput.o: DataInput.cpp.o
-.PHONY : DataInput.o
-
-# target to build an object file
-DataInput.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/DataInput.cpp.o
-.PHONY : DataInput.cpp.o
-
-DataInput.i: DataInput.cpp.i
-.PHONY : DataInput.i
-
-# target to preprocess a source file
-DataInput.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/DataInput.cpp.i
-.PHONY : DataInput.cpp.i
-
-DataInput.s: DataInput.cpp.s
-.PHONY : DataInput.s
-
-# target to generate assembly for a file
-DataInput.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/DataInput.cpp.s
-.PHONY : DataInput.cpp.s
 
 LowerBound.o: LowerBound.cpp.o
 .PHONY : LowerBound.o
@@ -288,9 +264,6 @@ help:
 	@echo "... Bin.o"
 	@echo "... Bin.i"
 	@echo "... Bin.s"
-	@echo "... DataInput.o"
-	@echo "... DataInput.i"
-	@echo "... DataInput.s"
 	@echo "... LowerBound.o"
 	@echo "... LowerBound.i"
 	@echo "... LowerBound.s"
