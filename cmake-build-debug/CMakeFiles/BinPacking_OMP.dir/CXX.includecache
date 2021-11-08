@@ -21,36 +21,22 @@ stack
 -
 omp.h
 -
-UpperBound.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
-LowerBound.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
-DataInput.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/DataInput.h
-Bin.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
+Bound.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Bound.h
 
-/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
-list
--
+/home/zhongqi/CLionProjects/BinPacking_OMP/Bound.h
 vector
 -
-Bin.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
-
-/home/zhongqi/CLionProjects/BinPacking_OMP/DataInput.h
-Bin.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
-
-/home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
-Bin.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
-algorithm
+climits
 -
+unordered_map
+-
+Item.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Item.h
 
-/home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
-Bin.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Item.h
+vector
+-
 
 /home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp
 Algorithm.h

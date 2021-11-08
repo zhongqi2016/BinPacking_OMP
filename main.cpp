@@ -4,6 +4,7 @@
 using namespace std;
 
 
+
 vector<string> readFileDir(const string &PATH) {
     struct dirent *ptr;
     DIR *dir;
@@ -18,7 +19,7 @@ vector<string> readFileDir(const string &PATH) {
     return files;
 }
 
-DataInput getData(const string &filename) {
+BinPacking getData(const string &filename) {
     int n, c;
     vector<int> items;
 
@@ -42,28 +43,29 @@ DataInput getData(const string &filename) {
     }
     infile.close();
 
-    return DataInput(n, c, items);
+    return BinPacking(c, items);
 }
 
 
 
 int main() {
-    omp_set_num_threads(8);
-//    printf("%d\n", omp_get_max_threads() - omp_get_num_threads());
+    int num_threads=8;
     string path = "./bin1data/";
+    omp_set_num_threads(num_threads);
+//    printf("%d\n", omp_get_max_threads() - omp_get_num_threads());
+
     vector<string> files = readFileDir(path);
     for (int i = 0; i < files.size(); ++i) {
 //        if (i==10||i==11) continue;
         printf("%d. filename: %s\n", i, files[i].c_str());
         string fileName = path;
         fileName.append(files[i]);
-        DataInput data = getData(fileName);
-        clock_t start, end;
-        start = clock();
-
-        int result = BNB(data);
-        end = clock();
-        double time = (double) (end - start) / CLOCKS_PER_SEC;
+        BinPacking binPacking = std::move(getData(fileName));
+        double start, end;
+        start = omp_get_wtime();
+        int result = binPacking.BNB();
+        end = omp_get_wtime();
+        double time = (double) (end - start);
         printf("Number of bins needed = %d\nTime=%lf\n", result, time);
     }
 

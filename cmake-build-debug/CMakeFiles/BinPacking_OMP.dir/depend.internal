@@ -4,25 +4,17 @@
 CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o
  /home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.cpp
  /home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/DataInput.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
-CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o
- /home/zhongqi/CLionProjects/BinPacking_OMP/Bin.cpp
- /home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
-CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o
- /home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.cpp
- /home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
-CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.o
- /home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.cpp
- /home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
+ /home/zhongqi/CLionProjects/BinPacking_OMP/Bound.h
+ /home/zhongqi/CLionProjects/BinPacking_OMP/Item.h
+CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o
+ /home/zhongqi/CLionProjects/BinPacking_OMP/Bound.cpp
+ /home/zhongqi/CLionProjects/BinPacking_OMP/Bound.h
+ /home/zhongqi/CLionProjects/BinPacking_OMP/Item.h
+CMakeFiles/BinPacking_OMP.dir/Item.cpp.o
+ /home/zhongqi/CLionProjects/BinPacking_OMP/Item.cpp
+ /home/zhongqi/CLionProjects/BinPacking_OMP/Item.h
 CMakeFiles/BinPacking_OMP.dir/main.cpp.o
  /home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/Bin.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/DataInput.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.h
- /home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.h
+ /home/zhongqi/CLionProjects/BinPacking_OMP/Bound.h
+ /home/zhongqi/CLionProjects/BinPacking_OMP/Item.h
  /home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp

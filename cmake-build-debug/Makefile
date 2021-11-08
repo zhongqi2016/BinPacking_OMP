@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/169/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/169/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/169/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/169/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -153,77 +153,53 @@ Algorithm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.s
 .PHONY : Algorithm.cpp.s
 
-Bin.o: Bin.cpp.o
-.PHONY : Bin.o
+Bound.o: Bound.cpp.o
+.PHONY : Bound.o
 
 # target to build an object file
-Bin.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o
-.PHONY : Bin.cpp.o
+Bound.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o
+.PHONY : Bound.cpp.o
 
-Bin.i: Bin.cpp.i
-.PHONY : Bin.i
+Bound.i: Bound.cpp.i
+.PHONY : Bound.i
 
 # target to preprocess a source file
-Bin.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bin.cpp.i
-.PHONY : Bin.cpp.i
+Bound.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bound.cpp.i
+.PHONY : Bound.cpp.i
 
-Bin.s: Bin.cpp.s
-.PHONY : Bin.s
+Bound.s: Bound.cpp.s
+.PHONY : Bound.s
 
 # target to generate assembly for a file
-Bin.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bin.cpp.s
-.PHONY : Bin.cpp.s
+Bound.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bound.cpp.s
+.PHONY : Bound.cpp.s
 
-LowerBound.o: LowerBound.cpp.o
-.PHONY : LowerBound.o
+Item.o: Item.cpp.o
+.PHONY : Item.o
 
 # target to build an object file
-LowerBound.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o
-.PHONY : LowerBound.cpp.o
+Item.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Item.cpp.o
+.PHONY : Item.cpp.o
 
-LowerBound.i: LowerBound.cpp.i
-.PHONY : LowerBound.i
-
-# target to preprocess a source file
-LowerBound.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.i
-.PHONY : LowerBound.cpp.i
-
-LowerBound.s: LowerBound.cpp.s
-.PHONY : LowerBound.s
-
-# target to generate assembly for a file
-LowerBound.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.s
-.PHONY : LowerBound.cpp.s
-
-UpperBound.o: UpperBound.cpp.o
-.PHONY : UpperBound.o
-
-# target to build an object file
-UpperBound.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.o
-.PHONY : UpperBound.cpp.o
-
-UpperBound.i: UpperBound.cpp.i
-.PHONY : UpperBound.i
+Item.i: Item.cpp.i
+.PHONY : Item.i
 
 # target to preprocess a source file
-UpperBound.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.i
-.PHONY : UpperBound.cpp.i
+Item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Item.cpp.i
+.PHONY : Item.cpp.i
 
-UpperBound.s: UpperBound.cpp.s
-.PHONY : UpperBound.s
+Item.s: Item.cpp.s
+.PHONY : Item.s
 
 # target to generate assembly for a file
-UpperBound.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.s
-.PHONY : UpperBound.cpp.s
+Item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Item.cpp.s
+.PHONY : Item.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -261,15 +237,12 @@ help:
 	@echo "... Algorithm.o"
 	@echo "... Algorithm.i"
 	@echo "... Algorithm.s"
-	@echo "... Bin.o"
-	@echo "... Bin.i"
-	@echo "... Bin.s"
-	@echo "... LowerBound.o"
-	@echo "... LowerBound.i"
-	@echo "... LowerBound.s"
-	@echo "... UpperBound.o"
-	@echo "... UpperBound.i"
-	@echo "... UpperBound.s"
+	@echo "... Bound.o"
+	@echo "... Bound.i"
+	@echo "... Bound.s"
+	@echo "... Item.o"
+	@echo "... Item.i"
+	@echo "... Item.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

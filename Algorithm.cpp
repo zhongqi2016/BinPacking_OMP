@@ -1,17 +1,143 @@
 
 #include "Algorithm.h"
 
-void getDetermined(std::vector<Bin> &solution, std::list<Bin> &current) {
-    for (auto it = current.rbegin(); it != current.rend(); ++it) {
-        if (it->sum == 0 && it->serial.size() != 0) {
-            solution.emplace_back(*it);
-        } else break;
+int BinPacking::BNB() {
+    std::vector<Item> items = refactor(weightOfItems);
+    sort(items.rbegin(), items.rend());
+    Bound bound(c, items);
+    UB = INT_MAX;
+
+    std::stack<Bound> s;
+    s.emplace(bound);
+
+#pragma omp parallel
+    {
+#pragma omp single
+        {
+            dfs(s);
+        }
+    }
+    organize();
+    return UB;
+}
+
+void BinPacking::dfs(std::stack<Bound> s) {
+//    printf("%d\n",omp_get_thread_num());
+    while (!s.empty() && foundRes == false) {
+        Bound bound = std::move(s.top());
+        s.pop();
+
+        int z = bound.getIndexOfItem();
+        std::vector<Item> &items = bound.getItems();
+        if (z == items.size() || items[z].weight == 0) return;
+
+        //create a new bin
+        if (z < UB - 1) {
+            Bound newBound(bound);
+            newBound.addCurrentItem();
+            newBound.reduction();
+
+            std::vector<int> curSolution(newBound.getDistribution());
+            int LB_current = newBound.lowerBound2();
+            int UB_current = newBound.upperBound(curSolution);
+
+            if (UB_current == LB) {
+                solution = std::move(curSolution);
+                UB = UB_current;
+                foundRes=true;
+                return;
+
+            }
+            if (UB > UB_current) {
+                UB = UB_current;
+                solution = std::move(curSolution);
+            }
+            newBound.incrementIndex();
+
+            if (UB_current > LB_current && LB_current < UB) {
+
+                if (newBound.getIndexOfItem() + newBound.getReduced() < UB) {
+                    if (newBound.lowerBound3() < UB) {
+                        s.push(newBound);
+                    }
+                }
+
+            }
+
+        }
+
+        //to all feasible initialized bins
+        int j;
+        z = bound.getIndexOfItem();
+        for (j = z - 1; j >= 0 && foundRes == false; --j) {
+            if (items[j].weight + items[z].weight <= c) {
+//                int z1 = z;
+                Bound newBound(bound);
+                newBound.mergeTwoItems(j, z);
+                std::vector<int> curSolution(newBound.getDistribution());
+
+                newBound.reduction();
+                int LB_current = newBound.lowerBound2();
+                int UB_current = newBound.upperBound(curSolution);
+
+                if (UB_current == LB) {
+                    solution = std::move(curSolution);
+                    UB = UB_current;
+                    foundRes=true;
+                    return;
+                }
+                if (UB > UB_current) {
+                    UB = UB_current;
+                    solution = std::move(curSolution);
+                }
+
+                if (UB_current > LB_current && LB_current < UB) {
+                    if (newBound.getIndexOfItem() + newBound.getReduced() < UB) {
+                        if (newBound.lowerBound3() < UB) {
+                            s.push(newBound);
+                        }
+                    }
+                }
+
+            }
+        }
+
+        while (omp_get_max_threads() - num_threads > 0 && s.size() > 1&&foundRes== false) {
+#pragma omp atomic update
+            ++num_threads;
+
+            auto &data = s.top();
+            std::stack<Bound> s2;
+            s2.emplace(std::move(data));
+            s.pop();
+#pragma omp task  firstprivate(s2)  default(shared)
+            dfs(s2);
+        }
+
+    }
+#pragma omp atomic update
+    --num_threads;
+}
+
+void BinPacking::organize() {
+    int min = *std::min_element(solution.begin(), solution.end());
+    if (min < 0) min = -min;
+    else return;
+    for (int &elem: solution) {
+        if (elem < 0)elem += min + 1;
+        else if (elem > 0) elem += min;
     }
 }
 
+void BinPacking::printSolution() {
+    for (auto index: solution) {
+        printf("%d ", index);
+    }
+    printf("\n");
+}
 
-void
-calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int LB, int c, int &num_threads, bool &isBreak) {
+/*
+void dfs(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int LB, int c, int &num_threads, bool &isBreak) {
     std::vector<Bin> *_solution = nullptr;
     std::vector<Bin> solution_UB;
     solution_UB.reserve(UB);
@@ -115,7 +241,7 @@ calc(std::stack<DataForCalc> &s, std::vector<Bin> &solution, int &UB, int LB, in
             s2.push(std::move(data));
             s.pop();
 #pragma omp task  shared(UB, num_threads, solution, isBreak) firstprivate(s2, c, LB)  default(none)
-            calc(s2, solution, UB, LB, c, num_threads, isBreak);
+            dfs(s2, solution, UB, LB, c, num_threads, isBreak);
 
 #pragma omp atomic update
             ++num_threads;
@@ -139,7 +265,7 @@ int BNB(DataInput data) {
 
     int LB = lowerBound2(binList, c);
     std::vector<Bin> solution_UB;
-    solution=&solution_UB;
+    solution = &solution_UB;
     int UB = bestFit(binList, c, solution_UB);
     if (LB == UB) {
         binOrganize(solution_UB, items);
@@ -165,8 +291,8 @@ int BNB(DataInput data) {
     {
 #pragma omp single
         {
-            bool isBreak=true;
-            calc(s,*solution, UB, L3, c,num_thread,isBreak);
+            bool isBreak = true;
+            dfs(s, *solution, UB, L3, c, num_thread, isBreak);
         }
     }
 
@@ -175,3 +301,4 @@ int BNB(DataInput data) {
     return solution->size();
 }
 
+*/

@@ -4,29 +4,17 @@
 CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o: \
  ../Algorithm.cpp \
  ../Algorithm.h \
- ../Bin.h \
- ../DataInput.h \
- ../LowerBound.h \
- ../UpperBound.h
-CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o: \
- ../Bin.cpp \
- ../Bin.h
-CMakeFiles/BinPacking_OMP.dir/DataInput.cpp.o: \
- ../Bin.h \
- ../DataInput.cpp \
- ../DataInput.h
-CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o: \
- ../Bin.h \
- ../LowerBound.cpp \
- ../LowerBound.h
-CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.o: \
- ../Bin.h \
- ../UpperBound.cpp \
- ../UpperBound.h
+ ../Bound.h \
+ ../Item.h
+CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o: \
+ ../Bound.cpp \
+ ../Bound.h \
+ ../Item.h
+CMakeFiles/BinPacking_OMP.dir/Item.cpp.o: \
+ ../Item.cpp \
+ ../Item.h
 CMakeFiles/BinPacking_OMP.dir/main.cpp.o: \
  ../Algorithm.h \
- ../Bin.h \
- ../DataInput.h \
- ../LowerBound.h \
- ../UpperBound.h \
+ ../Bound.h \
+ ../Item.h \
  ../main.cpp

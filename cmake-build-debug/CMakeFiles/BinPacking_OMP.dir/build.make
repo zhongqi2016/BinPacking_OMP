@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/169/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion/clion-2021.1.1/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/169/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -69,87 +69,72 @@ include CMakeFiles/BinPacking_OMP.dir/flags.make
 CMakeFiles/BinPacking_OMP.dir/main.cpp.o: CMakeFiles/BinPacking_OMP.dir/flags.make
 CMakeFiles/BinPacking_OMP.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BinPacking_OMP.dir/main.cpp.o"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BinPacking_OMP.dir/main.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BinPacking_OMP.dir/main.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp
 
 CMakeFiles/BinPacking_OMP.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinPacking_OMP.dir/main.cpp.i"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp > CMakeFiles/BinPacking_OMP.dir/main.cpp.i
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp > CMakeFiles/BinPacking_OMP.dir/main.cpp.i
 
 CMakeFiles/BinPacking_OMP.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinPacking_OMP.dir/main.cpp.s"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp -o CMakeFiles/BinPacking_OMP.dir/main.cpp.s
-
-CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o: CMakeFiles/BinPacking_OMP.dir/flags.make
-CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o: ../LowerBound.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.cpp
-
-CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.i"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.cpp > CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.i
-
-CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.s"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhongqi/CLionProjects/BinPacking_OMP/LowerBound.cpp -o CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.s
-
-CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.o: CMakeFiles/BinPacking_OMP.dir/flags.make
-CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.o: ../UpperBound.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.o"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.cpp
-
-CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.i"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.cpp > CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.i
-
-CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.s"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhongqi/CLionProjects/BinPacking_OMP/UpperBound.cpp -o CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.s
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp -o CMakeFiles/BinPacking_OMP.dir/main.cpp.s
 
 CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o: CMakeFiles/BinPacking_OMP.dir/flags.make
 CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o: ../Algorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o"
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.cpp
 
 CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.i"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.cpp > CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.i
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.cpp > CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.i
 
 CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.s"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.cpp -o CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.s
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.cpp -o CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.s
 
-CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o: CMakeFiles/BinPacking_OMP.dir/flags.make
-CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o: ../Bin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/Bin.cpp
+CMakeFiles/BinPacking_OMP.dir/Item.cpp.o: CMakeFiles/BinPacking_OMP.dir/flags.make
+CMakeFiles/BinPacking_OMP.dir/Item.cpp.o: ../Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BinPacking_OMP.dir/Item.cpp.o"
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BinPacking_OMP.dir/Item.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/Item.cpp
 
-CMakeFiles/BinPacking_OMP.dir/Bin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinPacking_OMP.dir/Bin.cpp.i"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhongqi/CLionProjects/BinPacking_OMP/Bin.cpp > CMakeFiles/BinPacking_OMP.dir/Bin.cpp.i
+CMakeFiles/BinPacking_OMP.dir/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinPacking_OMP.dir/Item.cpp.i"
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhongqi/CLionProjects/BinPacking_OMP/Item.cpp > CMakeFiles/BinPacking_OMP.dir/Item.cpp.i
 
-CMakeFiles/BinPacking_OMP.dir/Bin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinPacking_OMP.dir/Bin.cpp.s"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhongqi/CLionProjects/BinPacking_OMP/Bin.cpp -o CMakeFiles/BinPacking_OMP.dir/Bin.cpp.s
+CMakeFiles/BinPacking_OMP.dir/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinPacking_OMP.dir/Item.cpp.s"
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhongqi/CLionProjects/BinPacking_OMP/Item.cpp -o CMakeFiles/BinPacking_OMP.dir/Item.cpp.s
+
+CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o: CMakeFiles/BinPacking_OMP.dir/flags.make
+CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o: ../Bound.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o"
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o -c /home/zhongqi/CLionProjects/BinPacking_OMP/Bound.cpp
+
+CMakeFiles/BinPacking_OMP.dir/Bound.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinPacking_OMP.dir/Bound.cpp.i"
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhongqi/CLionProjects/BinPacking_OMP/Bound.cpp > CMakeFiles/BinPacking_OMP.dir/Bound.cpp.i
+
+CMakeFiles/BinPacking_OMP.dir/Bound.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinPacking_OMP.dir/Bound.cpp.s"
+	/usr/bin/g++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhongqi/CLionProjects/BinPacking_OMP/Bound.cpp -o CMakeFiles/BinPacking_OMP.dir/Bound.cpp.s
 
 # Object files for target BinPacking_OMP
 BinPacking_OMP_OBJECTS = \
 "CMakeFiles/BinPacking_OMP.dir/main.cpp.o" \
-"CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o" \
-"CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.o" \
 "CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o" \
-"CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o"
+"CMakeFiles/BinPacking_OMP.dir/Item.cpp.o" \
+"CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o"
 
 # External object files for target BinPacking_OMP
 BinPacking_OMP_EXTERNAL_OBJECTS =
 
 BinPacking_OMP: CMakeFiles/BinPacking_OMP.dir/main.cpp.o
-BinPacking_OMP: CMakeFiles/BinPacking_OMP.dir/LowerBound.cpp.o
-BinPacking_OMP: CMakeFiles/BinPacking_OMP.dir/UpperBound.cpp.o
 BinPacking_OMP: CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o
-BinPacking_OMP: CMakeFiles/BinPacking_OMP.dir/Bin.cpp.o
+BinPacking_OMP: CMakeFiles/BinPacking_OMP.dir/Item.cpp.o
+BinPacking_OMP: CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o
 BinPacking_OMP: CMakeFiles/BinPacking_OMP.dir/build.make
 BinPacking_OMP: CMakeFiles/BinPacking_OMP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable BinPacking_OMP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable BinPacking_OMP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BinPacking_OMP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
