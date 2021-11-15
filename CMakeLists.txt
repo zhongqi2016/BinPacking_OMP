@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.17)
 project(BinPacking_OMP)
 
 FIND_PACKAGE( OpenMP REQUIRED)
@@ -10,4 +10,4 @@ endif()
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(BinPacking_OMP main.cpp Algorithm.cpp Algorithm.h Item.cpp Item.h Bound.cpp Bound.h )
+add_executable(BinPacking_OMP main.cpp BinPacking.cpp BinPacking.h Item.cpp Item.h Branch.cpp Branch.h ReadFiles.cpp ReadFiles.h)

@@ -9,13 +9,14 @@
 #include <dirent.h>
 #include <stack>
 #include <omp.h>
-#include "Bound.h"
+#include <atomic>
+#include "Branch.h"
 
 class BinPacking {
 public:
     BinPacking(int _c, std::vector<int> _weight) : c(_c), weightOfItems(_weight),
-                                                                     num_threads(0), UB(0),
-                                                                     solution(std::vector<int>(_weight.size(), 0)),foundRes(false) {}
+                                                   _UB(0),
+                                                   solution(std::vector<int>(_weight.size(), 0)), foundRes(false) {}
 
     int BNB();
 
@@ -23,20 +24,18 @@ public:
 
     void printSolution();
 
-    void setNumThreads(int numThreads){num_threads=numThreads;}
 
 private:
-    void dfs(std::stack<Bound> s);
+    void dfs(Branch *branch);
 
     void organize();
 
     const int c;//capacity of bin
-    int UB;
+    std::atomic<int> _UB;
     int LB;
-    int num_threads;
-    bool foundRes;
+    std::atomic<bool> foundRes;
     std::vector<int> weightOfItems;
-    std::vector<int> solution;
+    std::vector<int> solution;//Current optimal solution
 };
 
 

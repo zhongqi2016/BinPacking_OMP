@@ -82,22 +82,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.cpp">
+		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/BinPacking.cpp">
 			<Option target="BinPacking_OMP"/>
 		</Unit>
-		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.h">
+		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/BinPacking.h">
 			<Option target="BinPacking_OMP"/>
 		</Unit>
-		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/Bound.cpp">
+		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/Branch.cpp">
 			<Option target="BinPacking_OMP"/>
 		</Unit>
-		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/Bound.h">
+		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/Branch.h">
 			<Option target="BinPacking_OMP"/>
 		</Unit>
 		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/Item.cpp">
 			<Option target="BinPacking_OMP"/>
 		</Unit>
 		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/Item.h">
+			<Option target="BinPacking_OMP"/>
+		</Unit>
+		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/ReadFiles.cpp">
+			<Option target="BinPacking_OMP"/>
+		</Unit>
+		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/ReadFiles.h">
 			<Option target="BinPacking_OMP"/>
 		</Unit>
 		<Unit filename="/home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp">

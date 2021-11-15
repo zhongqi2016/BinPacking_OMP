@@ -81,12 +81,12 @@ clean: CMakeFiles/BinPacking_OMP.dir/clean
 CMakeFiles/BinPacking_OMP.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target BinPacking_OMP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target BinPacking_OMP"
 .PHONY : CMakeFiles/BinPacking_OMP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BinPacking_OMP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BinPacking_OMP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhongqi/CLionProjects/BinPacking_OMP/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/BinPacking_OMP.dir/rule

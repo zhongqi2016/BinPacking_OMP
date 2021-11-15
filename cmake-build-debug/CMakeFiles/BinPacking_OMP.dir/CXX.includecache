@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/BinPacking.h
 vector
 -
 algorithm
@@ -21,10 +21,12 @@ stack
 -
 omp.h
 -
-Bound.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/Bound.h
+atomic
+-
+Branch.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Branch.h
 
-/home/zhongqi/CLionProjects/BinPacking_OMP/Bound.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/Branch.h
 vector
 -
 climits
@@ -38,7 +40,15 @@ Item.h
 vector
 -
 
+/home/zhongqi/CLionProjects/BinPacking_OMP/ReadFiles.h
+string
+-
+BinPacking.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/BinPacking.h
+
 /home/zhongqi/CLionProjects/BinPacking_OMP/main.cpp
-Algorithm.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/Algorithm.h
+iostream
+-
+ReadFiles.h
+/home/zhongqi/CLionProjects/BinPacking_OMP/ReadFiles.h
 

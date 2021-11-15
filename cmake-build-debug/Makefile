@@ -129,53 +129,53 @@ BinPacking_OMP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/build
 .PHONY : BinPacking_OMP/fast
 
-Algorithm.o: Algorithm.cpp.o
-.PHONY : Algorithm.o
+BinPacking.o: BinPacking.cpp.o
+.PHONY : BinPacking.o
 
 # target to build an object file
-Algorithm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.o
-.PHONY : Algorithm.cpp.o
+BinPacking.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/BinPacking.cpp.o
+.PHONY : BinPacking.cpp.o
 
-Algorithm.i: Algorithm.cpp.i
-.PHONY : Algorithm.i
+BinPacking.i: BinPacking.cpp.i
+.PHONY : BinPacking.i
 
 # target to preprocess a source file
-Algorithm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.i
-.PHONY : Algorithm.cpp.i
+BinPacking.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/BinPacking.cpp.i
+.PHONY : BinPacking.cpp.i
 
-Algorithm.s: Algorithm.cpp.s
-.PHONY : Algorithm.s
+BinPacking.s: BinPacking.cpp.s
+.PHONY : BinPacking.s
 
 # target to generate assembly for a file
-Algorithm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Algorithm.cpp.s
-.PHONY : Algorithm.cpp.s
+BinPacking.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/BinPacking.cpp.s
+.PHONY : BinPacking.cpp.s
 
-Bound.o: Bound.cpp.o
-.PHONY : Bound.o
+Branch.o: Branch.cpp.o
+.PHONY : Branch.o
 
 # target to build an object file
-Bound.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bound.cpp.o
-.PHONY : Bound.cpp.o
+Branch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Branch.cpp.o
+.PHONY : Branch.cpp.o
 
-Bound.i: Bound.cpp.i
-.PHONY : Bound.i
+Branch.i: Branch.cpp.i
+.PHONY : Branch.i
 
 # target to preprocess a source file
-Bound.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bound.cpp.i
-.PHONY : Bound.cpp.i
+Branch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Branch.cpp.i
+.PHONY : Branch.cpp.i
 
-Bound.s: Bound.cpp.s
-.PHONY : Bound.s
+Branch.s: Branch.cpp.s
+.PHONY : Branch.s
 
 # target to generate assembly for a file
-Bound.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Bound.cpp.s
-.PHONY : Bound.cpp.s
+Branch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Branch.cpp.s
+.PHONY : Branch.cpp.s
 
 Item.o: Item.cpp.o
 .PHONY : Item.o
@@ -200,6 +200,30 @@ Item.s: Item.cpp.s
 Item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/Item.cpp.s
 .PHONY : Item.cpp.s
+
+ReadFiles.o: ReadFiles.cpp.o
+.PHONY : ReadFiles.o
+
+# target to build an object file
+ReadFiles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/ReadFiles.cpp.o
+.PHONY : ReadFiles.cpp.o
+
+ReadFiles.i: ReadFiles.cpp.i
+.PHONY : ReadFiles.i
+
+# target to preprocess a source file
+ReadFiles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/ReadFiles.cpp.i
+.PHONY : ReadFiles.cpp.i
+
+ReadFiles.s: ReadFiles.cpp.s
+.PHONY : ReadFiles.s
+
+# target to generate assembly for a file
+ReadFiles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinPacking_OMP.dir/build.make CMakeFiles/BinPacking_OMP.dir/ReadFiles.cpp.s
+.PHONY : ReadFiles.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -234,15 +258,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BinPacking_OMP"
-	@echo "... Algorithm.o"
-	@echo "... Algorithm.i"
-	@echo "... Algorithm.s"
-	@echo "... Bound.o"
-	@echo "... Bound.i"
-	@echo "... Bound.s"
+	@echo "... BinPacking.o"
+	@echo "... BinPacking.i"
+	@echo "... BinPacking.s"
+	@echo "... Branch.o"
+	@echo "... Branch.i"
+	@echo "... Branch.s"
 	@echo "... Item.o"
 	@echo "... Item.i"
 	@echo "... Item.s"
+	@echo "... ReadFiles.o"
+	@echo "... ReadFiles.i"
+	@echo "... ReadFiles.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

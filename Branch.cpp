@@ -3,9 +3,9 @@
 //
 #include <fstream>
 #include <sstream>
-#include "Bound.h"
+#include "Branch.h"
 
-int Bound::L2withA(int alpha) const {
+int Branch::L2withA(int alpha) const {
     int J1 = 0;
     int J2 = 0;
     int J3 = 0;
@@ -30,7 +30,7 @@ int Bound::L2withA(int alpha) const {
     return L;
 }
 
-int Bound::lowerBound2() const {
+int Branch::lowerBound2() const {
     int max = 0;
     int L;
 
@@ -52,7 +52,7 @@ void setDistribution(std::vector<int> &distribution, int num, int index) {
     distribution[index] = num;
 }
 
-int Bound::upperBound(std::vector<int> &currSolution) {
+int Branch::upperBound(std::vector<int> &currSolution) {
     int result = 0;
     int length = items.size();
     int ava[length];
@@ -82,7 +82,7 @@ int Bound::upperBound(std::vector<int> &currSolution) {
 }
 
 //item1 <- item2
-void Bound::mergeTwoItems(int index1, int index2) {
+void Branch::mergeTwoItems(int index1, int index2) {
     items[index1].weight += items[index2].weight;
     items[index2].weight = 0;
     int i = items[index1].index;
@@ -92,12 +92,12 @@ void Bound::mergeTwoItems(int index1, int index2) {
     distribution[i] = items[index2].index;
 }
 
-void Bound::addCurrentItem() {
+void Branch::addCurrentItem() {
     items[indexOfItem].combination = true;
 
 }
 
-int Bound::findLargestK(int index) const {
+int Branch::findLargestK(int index) const {
     int sum = items[index].weight;
     int k = 0;
 
@@ -114,7 +114,7 @@ int Bound::findLargestK(int index) const {
     return k;
 }
 
-int Bound::findMinH(int index) const {
+int Branch::findMinH(int index) const {
     int weight_i = items[index].weight;
     for (int i = 0; i < items.size(); ++i) {
         if (items[i].weight == 0 || i == index) continue;
@@ -126,7 +126,7 @@ int Bound::findMinH(int index) const {
     return -1;
 }
 
-bool Bound::findAB(int index, int &a, int &b) const {
+bool Branch::findAB(int index, int &a, int &b) const {
     int weightCanUse = c - items[index].weight;
     int i;
     int maxValue = 0;
@@ -158,7 +158,7 @@ bool Bound::findAB(int index, int &a, int &b) const {
     return flag;
 }
 
-void Bound::reduction() {
+void Branch::reduction() {
     std::vector<int> bj(items.size(), 0);
     std::vector<int> F;
     int count = 0;//Deleted items that have been put in bins
@@ -361,7 +361,7 @@ int reductionForL3(std::vector<int> &w, int c) {
 }
 
 
-int Bound::lowerBound3() const {
+int Branch::lowerBound3() const {
     int n = items.size();
     std::vector<int> w(n);
     for (int i = 0; i < n; ++i) {
@@ -388,7 +388,7 @@ int Bound::lowerBound3() const {
 }
 
 
-void Bound::printDistribution() const {
+void Branch::printDistribution() const {
     for (auto index:distribution) {
         printf("%d ", index);
     }
