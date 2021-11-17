@@ -44,9 +44,8 @@ void BinPacking::dfs(Branch *branch) {
 //                int z1 = z;
             Branch *newBranch = new Branch(*branch);
             newBranch->mergeTwoItems(j, z);
-            std::vector<int> curSolution(newBranch->getDistribution());
-
             newBranch->reduction();
+            std::vector<int> curSolution(newBranch->getDistribution());
             int LB_current = newBranch->lowerBound2();
             int UB_current = newBranch->upperBound(curSolution);
 

@@ -49,9 +49,9 @@ public:
 
     void incrementIndex() {
         ++indexOfItem;
-//        while (items[indexOfItem].weight + items[indexOfItem].weight > c) {
-//            ++indexOfItem;
-//        }
+        while (items[indexOfItem].weight + items[indexOfItem].weight > c) {
+            ++indexOfItem;
+        }
     }
 
     int getReduced() { return reduced; }
