@@ -8,11 +8,11 @@ using namespace std;
 
 int main() {
     int num_threads=8;
-    string path = "./bin1data/";
+    string path = "./bin1data/"; //Path of data
+
     omp_set_num_threads(num_threads);
     ReadFiles readFiles(path);
     for (int i = 0; i < readFiles.getNumOfFiles(); ++i) {
-//        if (i==10||i==11) continue;
         std::cout << i << ". filename: " << readFiles.getFileName(i) << std::endl;
 
         BinPacking binPacking = readFiles.getData(i);
