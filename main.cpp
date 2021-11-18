@@ -12,11 +12,12 @@ int main() {
     omp_set_num_threads(num_threads);
     ReadFiles readFiles(path);
     readFiles.sortDirs();
-    for (int i = 164; i < readFiles.getNumOfFiles(); ++i) {
+    for (int i = 0; i < readFiles.getNumOfFiles(); ++i) {
         cout << i << ". " << readFiles.getFileName(i)<<endl;
         BinPacking binPacking = readFiles.getData(i);
         double start, end;
         start = omp_get_wtime();
+
         int result = binPacking.BNB();
 
         end = omp_get_wtime();
