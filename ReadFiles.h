@@ -18,6 +18,7 @@ public:
 
     int getNumOfFiles() const { return numOfFiles; }
 
+    void sortDirs(){ std::sort(dirs.begin(),dirs.end());}
 private:
     std::string path;
     int numOfFiles;

@@ -26,7 +26,7 @@ public:
 
 
 private:
-    void dfs(Branch *branch);
+    void bfs(Branch *branch);
 
     void organize();
 

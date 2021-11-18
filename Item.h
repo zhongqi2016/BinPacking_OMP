@@ -10,9 +10,9 @@
 struct Item {
     int index;
     int weight;
-    bool combination;
+//    bool combination;
 
-    Item(int _index, int _weight) : index(_index), weight(_weight), combination(false) {}
+    Item(int _index, int _weight) : index(_index), weight(_weight) {}
 
     bool operator<(const Item &item) const {
         return weight < item.weight;

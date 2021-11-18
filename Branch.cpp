@@ -92,10 +92,10 @@ void Branch::mergeTwoItems(int index1, int index2) {
     distribution[i] = items[index2].index;
 }
 
-void Branch::addCurrentItem() {
-    items[indexOfItem].combination = true;
-
-}
+//void Branch::addCurrentItem() {
+//    items[indexOfItem].combination = true;
+//
+//}
 
 int Branch::findLargestK(int index) const {
     int sum = items[index].weight;
@@ -195,7 +195,7 @@ void Branch::reduction() {
             for (int j : F) {
                 setDistribution(distribution, -reduced, items[j].index);
                 items[j].weight = 0;
-                if (items[j].combination) {
+                if (j<indexOfItem) {
                     ++count;
                 }
             }

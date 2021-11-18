@@ -19,13 +19,6 @@ public:
                                                 reduced(0),
                                                 distribution(std::vector<int>(_items.size(), 0)) {}
 
-//    Branch(const Branch* branch){
-//        c=branch->c;
-//        items=branch->items;
-//        indexOfItem=branch->indexOfItem;
-//        reduced=branch->reduced;
-//        distribution=branch->distribution;
-//    }
 
     ///Lower bound L2
     int lowerBound2() const;
@@ -49,7 +42,8 @@ public:
 
     void incrementIndex() {
         ++indexOfItem;
-        while (items[indexOfItem].weight + items[indexOfItem].weight > c) {
+        while (items[indexOfItem].weight + items[indexOfItem-1].weight > c) {
+//            addCurrentItem();
             ++indexOfItem;
         }
     }
@@ -58,7 +52,7 @@ public:
 
     std::vector<Item> &getItems() { return items; }
 
-    void addCurrentItem();
+//    void addCurrentItem();
 
 private:
     ///capacity

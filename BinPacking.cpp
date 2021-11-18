@@ -24,14 +24,14 @@ int BinPacking::BNB() {
     {
 #pragma omp single
         {
-            dfs(branch);
+            bfs(branch);
         }
     }
     organize();
     return _UB;
 }
 
-void BinPacking::dfs(Branch *branch) {
+void BinPacking::bfs(Branch *branch) {
     int z = branch->getIndexOfItem();
     std::vector<Item> &items = branch->getItems();
     if (z == items.size() || items[z].weight == 0) return;
@@ -71,7 +71,7 @@ void BinPacking::dfs(Branch *branch) {
                 if (newBranch->getIndexOfItem() + newBranch->getReduced() < UB) {
                     if (newBranch->lowerBound3() < UB) {
 #pragma omp task shared(newBranch) default(none)
-                        dfs(newBranch);
+                        bfs(newBranch);
                     }
                 }
             }
@@ -80,9 +80,10 @@ void BinPacking::dfs(Branch *branch) {
     }
 
     //create a new bin
-    if (z < _UB - 1) {
+    if (z+branch->getReduced() < _UB) {
         Branch *newBranch = new Branch(*branch);
-        newBranch->addCurrentItem();
+//        newBranch->addCurrentItem();
+        newBranch->incrementIndex();
         newBranch->reduction();
 
         std::vector<int> curSolution(newBranch->getDistribution());
@@ -105,14 +106,14 @@ void BinPacking::dfs(Branch *branch) {
                 break;
             }
         }
-        newBranch->incrementIndex();
+
 
         if (UB_current > LB_current && LB_current < UB) {
 
             if (newBranch->getIndexOfItem() + newBranch->getReduced() < UB) {
                 if (newBranch->lowerBound3() < UB) {
 #pragma omp task shared(newBranch) default(none)
-                    dfs(newBranch);
+                    bfs(newBranch);
                 }
             }
 

@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/zhongqi/CLionProjects/BinPacking_OMP/BinPacking.cpp
-BinPacking.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/BinPacking.h
-
 /home/zhongqi/CLionProjects/BinPacking_OMP/BinPacking.h
 vector
 -
@@ -30,14 +26,6 @@ atomic
 Branch.h
 /home/zhongqi/CLionProjects/BinPacking_OMP/Branch.h
 
-/home/zhongqi/CLionProjects/BinPacking_OMP/Branch.cpp
-fstream
--
-sstream
--
-Branch.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/Branch.h
-
 /home/zhongqi/CLionProjects/BinPacking_OMP/Branch.h
 vector
 -
@@ -51,10 +39,6 @@ Item.h
 /home/zhongqi/CLionProjects/BinPacking_OMP/Item.h
 vector
 -
-
-/home/zhongqi/CLionProjects/BinPacking_OMP/ReadFiles.cpp
-ReadFiles.h
-/home/zhongqi/CLionProjects/BinPacking_OMP/ReadFiles.h
 
 /home/zhongqi/CLionProjects/BinPacking_OMP/ReadFiles.h
 string

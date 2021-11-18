@@ -1,1 +1,1 @@
-/usr/bin/g++-10  -fopenmp -g CMakeFiles/BinPacking_OMP.dir/main.cpp.o CMakeFiles/BinPacking_OMP.dir/BinPacking.cpp.o CMakeFiles/BinPacking_OMP.dir/Item.cpp.o CMakeFiles/BinPacking_OMP.dir/Branch.cpp.o CMakeFiles/BinPacking_OMP.dir/ReadFiles.cpp.o -o BinPacking_OMP 
+/usr/bin/g++-11  -fopenmp -g CMakeFiles/BinPacking_OMP.dir/main.cpp.o CMakeFiles/BinPacking_OMP.dir/BinPacking.cpp.o CMakeFiles/BinPacking_OMP.dir/Item.cpp.o CMakeFiles/BinPacking_OMP.dir/Branch.cpp.o CMakeFiles/BinPacking_OMP.dir/ReadFiles.cpp.o -o BinPacking_OMP 
