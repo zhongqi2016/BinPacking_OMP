@@ -4,7 +4,7 @@
 int BinPacking::BNB() {
     std::vector<Item> items = refactor(weightOfItems);
     sort(items.rbegin(), items.rend());
-    Branch *branch=new Branch(c, items);
+    Branch *branch = new Branch(c, items);
 
     branch->reduction();
     solution = branch->getDistribution();
@@ -52,7 +52,7 @@ void BinPacking::bfs(Branch *branch) {
             if (UB_current == LB) {
                 solution = std::move(curSolution);
                 _UB.store(UB_current);
-                foundRes .store(true);
+                foundRes.store(true);
                 delete newBranch;
                 delete branch;
                 return;
@@ -80,7 +80,7 @@ void BinPacking::bfs(Branch *branch) {
     }
 
     //create a new bin
-    if (z+branch->getReduced() < _UB) {
+    if (z + branch->getReduced() < _UB) {
         Branch *newBranch = new Branch(*branch);
 //        newBranch->addCurrentItem();
         newBranch->incrementIndex();
@@ -133,9 +133,24 @@ void BinPacking::organize() {
     }
 }
 
-void BinPacking::printSolution() {
+void BinPacking::printSolution1() {
     for (auto index: solution) {
         printf("%d ", index);
+    }
+    printf("\n");
+}
+
+void BinPacking::printSolution2() {
+    std::vector<std::vector<int>> res(_UB.load());
+    for (int i = 0; i < solution.size(); ++i) {
+        res[solution[i] - 1].push_back(i);
+    }
+    for (auto &bin: res) {
+        printf("{");
+        for (int item: bin) {
+            printf("%d,", item);
+        }
+        printf("},");
     }
     printf("\n");
 }

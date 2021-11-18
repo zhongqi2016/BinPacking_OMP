@@ -12,8 +12,8 @@ int main() {
     omp_set_num_threads(num_threads);
     ReadFiles readFiles(path);
     readFiles.sortDirs();
-    for (int i = 0; i < readFiles.getNumOfFiles(); ++i) {
-        cout << i << " " << readFiles.getFileName(i);
+    for (int i = 164; i < readFiles.getNumOfFiles(); ++i) {
+        cout << i << ". " << readFiles.getFileName(i)<<endl;
         BinPacking binPacking = readFiles.getData(i);
         double start, end;
         start = omp_get_wtime();
@@ -21,7 +21,8 @@ int main() {
 
         end = omp_get_wtime();
         double time = (end - start);
-        binPacking.printSolution();
+        cout<<"solution: ";
+        binPacking.printSolution2();
         printf("result=%d, time=%lf\n", result,time);
 
     }

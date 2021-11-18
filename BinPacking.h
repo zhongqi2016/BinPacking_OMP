@@ -22,7 +22,13 @@ public:
 
     std::vector<int> &getSolution() { return solution; }
 
-    void printSolution();
+    //solution: 1,1,2,2,3,3,
+    //the number is serial of bin where each item is located
+    void printSolution1();
+
+    //solution: {1,2,},{3,4,},{5,6,}
+    //the number above is the number of each item. Items in a bracket will be placed in the same box.
+    void printSolution2();
 
 
 private:
