@@ -32,6 +32,7 @@ int BinPacking::BNB() {
 }
 
 void BinPacking::bfs(Branch *branch) {
+    ++countBranches;
     int z = branch->getIndexOfItem();
     std::vector<Item> &items = branch->getItems();
     if (z == items.size() || items[z].weight == 0) return;

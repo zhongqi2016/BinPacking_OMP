@@ -15,7 +15,7 @@
 class BinPacking {
 public:
     BinPacking(int _c, std::vector<int> _weight) : c(_c), weightOfItems(_weight),
-                                                   _UB(0),
+                                                   _UB(0),countBranches(0),
                                                    solution(std::vector<int>(_weight.size(), 0)), foundRes(false) {}
 
     int BNB();
@@ -30,6 +30,9 @@ public:
     //the number above is the number of each item. Items in a bracket will be placed in the same box.
     void printSolution2();
 
+    int getCountBranches(){
+        return countBranches;
+    }
 
 private:
     void bfs(Branch *branch);
@@ -38,6 +41,7 @@ private:
 
     const int c;//capacity of bin
     std::atomic<int> _UB;
+    std::atomic<int> countBranches;
     int LB;
     std::atomic<bool> foundRes;
     std::vector<int> weightOfItems;

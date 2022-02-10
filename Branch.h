@@ -42,7 +42,7 @@ public:
 
     void incrementIndex() {
         ++indexOfItem;
-        while (items[indexOfItem].weight + items[indexOfItem-1].weight > c) {
+        while (items[indexOfItem].weight + items[indexOfItem - 1].weight > c) {
 //            addCurrentItem();
             ++indexOfItem;
         }

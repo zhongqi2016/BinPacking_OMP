@@ -19,12 +19,12 @@ int main() {
         start = omp_get_wtime();
 
         int result = binPacking.BNB();
-
+        int countBranches=binPacking.getCountBranches();
         end = omp_get_wtime();
         double time = (end - start);
         cout<<"solution: ";
         binPacking.printSolution2();
-        printf("result=%d, time=%lf\n", result,time);
+        printf("result=%d, time=%lf, branches=%d\n", result,time,countBranches);
 
     }
 
