@@ -12,13 +12,16 @@ class ReadFiles {
 public:
     explicit ReadFiles(const std::string &PATH);
 
-    BinPacking getData(int index);
+    BinPacking getData(int index, int numThreads);
+
+    std::vector<int> getVectorData(int index);
 
     std::string &getFileName(int index) { return dirs[index]; }
 
     int getNumOfFiles() const { return numOfFiles; }
 
-    void sortDirs(){ std::sort(dirs.begin(),dirs.end());}
+    void sortDirs() { std::sort(dirs.begin(), dirs.end()); }
+
 private:
     std::string path;
     int numOfFiles;

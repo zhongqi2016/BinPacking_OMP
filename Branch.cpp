@@ -5,7 +5,26 @@
 #include <sstream>
 #include "Branch.h"
 
-int Branch::L2withA(int alpha) const {
+std::vector<int> Branch::serialization() {
+    std::vector<int> message(2); //(UB+LB)
+    ///capacity+reduced+indexOfItem+items+distribution
+    message.reserve(7 + 2 * items.size() + distribution.size());
+    message.emplace_back(c);
+    message.emplace_back(reduced);
+    message.emplace_back(indexOfItem);
+    message.emplace_back(items.size());
+    for (Item &item:items) {
+        message.emplace_back(item.index);
+        message.emplace_back(item.weight);
+    }
+    message.emplace_back(distribution.size());
+    for (int dis:distribution) {
+        message.emplace_back(dis);
+    }
+    return message;
+}
+
+inline int Branch::L2withA(int alpha) const {
     int J1 = 0;
     int J2 = 0;
     int J3 = 0;
@@ -195,7 +214,7 @@ void Branch::reduction() {
             for (int j : F) {
                 setDistribution(distribution, -reduced, items[j].index);
                 items[j].weight = 0;
-                if (j<indexOfItem) {
+                if (j < indexOfItem) {
                     ++count;
                 }
             }
@@ -254,7 +273,6 @@ int findLargestK(const std::vector<int> &w, int index, int c) {
     int sum = w[index];
     int k = 0;
 
-
     for (int i = int(w.size()) - 1; i > 0; --i) {
         if (w[i] == 0 || i == index) continue;
         if (sum + w[i] <= c) {
@@ -278,7 +296,6 @@ int findMinH(const std::vector<int> &w, int index, int c) {
     //fail
     return -1;
 }
-
 
 
 bool findAB(const std::vector<int> &w, int index, int &a, int &b, int c) {

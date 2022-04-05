@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.17)
 project(BinPacking_OMP)
 
+find_package(MPI)
+include_directories( ${MPI_INCLUDE_PATH})
+
 FIND_PACKAGE( OpenMP REQUIRED)
 if(OPENMP_FOUND)
     message("OPENMP FOUND")
@@ -8,6 +11,8 @@ if(OPENMP_FOUND)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 endif()
 
+
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(BinPacking_OMP main.cpp BinPacking.cpp BinPacking.h Item.cpp Item.h Branch.cpp Branch.h ReadFiles.cpp ReadFiles.h)
+target_link_libraries(BinPacking_OMP ${MPI_LIBRARIES})
