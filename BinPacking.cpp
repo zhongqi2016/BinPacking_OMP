@@ -1,4 +1,3 @@
-
 #include "BinPacking.h"
 
 BinPacking BinPacking::dataDeserialize(int *inputData, int numThreads) {
@@ -26,7 +25,7 @@ inline std::vector<int> BinPacking::branchSerialization(Branch &branch) const {
 }
 
 Branch BinPacking::branchDeserialize(int *inputMessage) {
-    if (inputMessage[0] < _UB) _UB = inputMessage[0];
+    _UB = inputMessage[0];
     int c = inputMessage[2];
     int reduced = inputMessage[3];
     int indexOfItem = inputMessage[4];
@@ -49,12 +48,42 @@ Branch BinPacking::branchDeserialize(int *inputMessage) {
 }
 
 inline void BinPacking::sendRequestToMaster() {
-    int command[2] = {3, 0};
+    int command[2] = {3, id_MPI};
     MPI_Send(command, 2, MPI_INT, id_root, 0, MPI_COMM_WORLD);
+}
+
+void BinPacking::sendBetterResult() {
+    int command[2] = {4, (int) solution.size() + 2};
+    int &sizeSend = command[1];
+    MPI_Send(command, 2, MPI_INT, id_root, 0, MPI_COMM_WORLD);
+    int *inputData = (int *) malloc(sizeSend * sizeof(int));
+    inputData[0] = sizeSend - 2;
+    inputData[1] = _UB.load();
+    memcpy(&inputData[2], solution.data(), inputData[0]);
+    MPI_Send(inputData, sizeSend, MPI_INT, id_root, 1, MPI_COMM_WORLD);
+    free(inputData);
 }
 
 
 
+int BinPacking::recvBetterResult(int size) {
+    int *solutionArray = (int *) malloc(size * sizeof(int));
+    MPI_Recv(solutionArray, size, MPI_INT, MPI_ANY_SOURCE, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+    int sizeOfSolution = solutionArray[0];
+    int UB_current=solutionArray[1];
+    std::vector<int> newSolution(solutionArray + 2, solutionArray + size);
+    free(solutionArray);
+
+    int UB = _UB.load();
+    while (UB > UB_current) {
+        solution = std::move(newSolution);
+        if (_UB.compare_exchange_weak(UB, UB_current)) {
+            UB = _UB.load();
+            break;
+        }
+    }
+    return UB_current;
+}
 
 Branch BinPacking::init() {
     std::vector<Item> items = refactor(weightOfItems);
@@ -85,7 +114,7 @@ Branch BinPacking::init() {
 
 void BinPacking::BNB(Branch branch) {
     initThreadPool();
-    bfs(std::move(branch));
+    append(std::move(branch));
     waitForFinished();
     endThreadPool();
 
@@ -93,18 +122,22 @@ void BinPacking::BNB(Branch branch) {
 }
 
 void BinPacking::bfs(Branch branch) {
+    printf("node%d: bfs\n",id_MPI);
+
     ++countBranches;
     //    printf("%d\n",countBranches.load());
     int z = branch.getIndexOfItem();
     std::vector<Item> &items = branch.getItems();
+
     if (z == items.size() || items[z].weight == 0) return;
 
     //to all feasible initialized bins
     int j;
     z = branch.getIndexOfItem();
+    printf("z=%d,UB=%d,reduced=%d\n",z,_UB.load(),branch.getReduced());
     for (j = z - 1; j >= 0 && !foundRes; --j) {
         if (items[j].weight + items[z].weight <= c) {
-            //                int z1 = z;
+            printf("run1\n");
             Branch newBranch(branch);
             newBranch.mergeTwoItems(j, z);
             newBranch.reduction();
@@ -113,18 +146,22 @@ void BinPacking::bfs(Branch branch) {
             int UB_current = newBranch.upperBound(curSolution);
 
             if (UB_current == LB) {
+                printf("node%d: got a better UB=%d\n",id_MPI,UB_current);
                 solution = std::move(curSolution);
                 _UB.store(UB_current);
                 foundRes.store(true);
                 clearQueue();
+                sendBetterResult();
                 return;
             }
 
             int UB = _UB.load();
             while (UB > UB_current) {
+                printf("node%d: got a better UB=%d\n",id_MPI,UB_current);
                 solution = std::move(curSolution);
                 if (_UB.compare_exchange_weak(UB, UB_current)) {
                     UB = _UB.load();
+                    sendBetterResult();
                     break;
                 }
             }
@@ -142,6 +179,7 @@ void BinPacking::bfs(Branch branch) {
 
     //create a new bin
     if (z + branch.getReduced() < _UB) {
+        printf("run2\n");
         Branch newBranch(branch);
         //        newBranch->addCurrentItem();
         newBranch.incrementIndex();
@@ -152,19 +190,21 @@ void BinPacking::bfs(Branch branch) {
         int UB_current = newBranch.upperBound(curSolution);
 
         if (UB_current == LB) {
+            printf("node%d: got a better UB=%d\n",id_MPI,UB_current);
             solution = std::move(curSolution);
             _UB.store(UB_current);
             foundRes.store(true);
             clearQueue();
-            //            delete newBranch;
-            //            delete branch;
+            sendBetterResult();
             return;
         }
         int UB = _UB.load();
         while (UB > UB_current) {
+            printf("node%d: got a better UB=%d\n",id_MPI,UB_current);
             solution = std::move(curSolution);
             if (_UB.compare_exchange_weak(UB, UB_current)) {
                 UB = _UB.load();
+                sendBetterResult();
                 break;
             }
         }

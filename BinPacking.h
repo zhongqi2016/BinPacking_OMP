@@ -51,6 +51,10 @@ public:
 
     void sendRequestToMaster();
 
+    void sendBetterResult();
+
+    int recvBetterResult(int size);
+
     std::vector<int> &getSolution() { return solution; }
 
     //solution: 1,1,2,2,3,3,
@@ -66,6 +70,8 @@ public:
     }
 
     bool resFound() { return foundRes.load(); }
+
+    int getUB() { return _UB.load(); }
 
 private:
     //----ThreadPool---
@@ -95,10 +101,33 @@ private:
     }
 
     void append(Branch &&task) {
+        if (workQueue.size() > 10) {
+            MPI_Request request;
+            int command[2];
+            MPI_Irecv(&command, 2, MPI_INT, id_root, 0, MPI_COMM_WORLD, &request);
+            int flag;
+            MPI_Test(&request, &flag, MPI_STATUS_IGNORE);
+            if (flag) {
+                if (command[0] == 4) {
+                    while (command[1] < _UB) {
+                        _UB.store(command[1]);
+                    }
+                } else if (command[0] == 3) {
+                    int dest = command[1];
+                    std::vector<int> sendData = branchSerialization(task);
+                    command[0] = 2;//branch data
+                    command[1] = sendData.size();//size of sendData
+                    MPI_Send(command, 2, MPI_INT, dest, 0, MPI_COMM_WORLD);
+                    MPI_Send(sendData.data(), command[1], MPI_INT, dest, 1, MPI_COMM_WORLD);
+                }
+
+            }
+        }
         std::lock_guard<std::mutex> locker(mtx);
         workQueue.emplace(std::forward<Branch>(task));
-
+        printf("node%d: append/workQueue.size()=%lu\n", id_MPI, workQueue.size());
         cond.notify_one();
+
     }
 
     void waitForFinished() {
@@ -138,7 +167,7 @@ private:
     int c;//capacity of bin
     std::atomic<int> _UB;
     std::atomic<int> countBranches;
-    std::atomic<int> numberOfTasks;
+//    std::atomic<int> numberOfTasks;
     int LB{};
     std::atomic<bool> foundRes;
     std::vector<int> weightOfItems;
