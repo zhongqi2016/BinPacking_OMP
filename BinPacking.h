@@ -27,7 +27,7 @@
 
 class BinPacking {
 public:
-    BinPacking(int _c, std::vector<int> _weight, int _numThreads) : c(_c), weightOfItems(_weight),
+    BinPacking(int _c, std::vector<int> &_weight, int _numThreads) : c(_c), weightOfItems(std::move(_weight)),
                                                                     _UB(0), countBranches(0), numThreads(_numThreads),
                                                                     solution(std::vector<int>(_weight.size(), 0)),
                                                                     foundRes(false), busy(0), isClosed(false) {
@@ -55,6 +55,8 @@ public:
 
     int recvBetterResult(int size);
 
+    void organize();
+
     std::vector<int> &getSolution() { return solution; }
 
     //solution: 1,1,2,2,3,3,
@@ -65,6 +67,7 @@ public:
     //the number above is the number of each item. Items in a bracket will be placed in the same box.
     void printSolution2();
 
+    void printWeightItems();
     int getCountBranches() {
         return countBranches;
     }
@@ -149,8 +152,6 @@ private:
     }
 
 private:
-
-    void organize();
 
     int id_MPI;
     //pool
