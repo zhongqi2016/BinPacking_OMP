@@ -28,12 +28,13 @@
 class BinPacking {
 public:
     BinPacking(int _c, std::vector<int> &_weight, int _numThreads) : c(_c), weightOfItems(std::move(_weight)),
-                                                                    _UB(0), countBranches(0), numThreads(_numThreads),
-                                                                    solution(std::vector<int>(_weight.size(), 0)),
-                                                                    foundRes(false), busy(0), isClosed(false) {
+                                                                     _UB(0), countBranches(0), numThreads(_numThreads),
+                                                                     solution(std::vector<int>(_weight.size(), 0)),
+                                                                     foundRes(false), busy(0), isClosed(false) {
         MPI_Comm_rank(MPI_COMM_WORLD, &id_MPI);
     }
 
+    BinPacking(int *inputData, int _numThreads);
 
     Branch init();
 
@@ -41,7 +42,7 @@ public:
 
     void bfs(Branch branch);
 
-    static BinPacking dataDeserialize(int *inputData, int numThreads);
+//    static BinPacking dataDeserialize(int *inputData, int numThreads);
 
     std::vector<int> getSerializeInputData();
 
@@ -54,6 +55,8 @@ public:
     void sendBetterResult();
 
     int recvBetterResult(int size);
+
+    void updateUB(int UB);
 
     void organize();
 
@@ -68,6 +71,7 @@ public:
     void printSolution2();
 
     void printWeightItems();
+
     int getCountBranches() {
         return countBranches;
     }

@@ -2,14 +2,16 @@
 
 void printVector(const std::vector<int> &v);
 
-BinPacking BinPacking::dataDeserialize(int *inputData, int numThreads) {
+BinPacking::BinPacking(int *inputData, int _numThreads) : c(inputData[1]),
+                                                          weightOfItems(std::vector<int>(inputData[0])),
+                                                          _UB(0), countBranches(0), numThreads(_numThreads),
+                                                          solution(std::vector<int>(inputData[0], 0)),
+                                                          foundRes(false), busy(0), isClosed(false) {
     int itemsSize = inputData[0];
+    MPI_Comm_rank(MPI_COMM_WORLD, &id_MPI);
 
-    int c = inputData[1];
-    std::vector<int> items(itemsSize);
-    items.reserve(itemsSize);
-    items.assign(&inputData[2],&inputData[2]+itemsSize);
-    return {c, items, numThreads};
+    weightOfItems.assign(&inputData[2], &inputData[2] + itemsSize);
+
 }
 
 std::vector<int> BinPacking::getSerializeInputData() {
@@ -57,14 +59,14 @@ inline void BinPacking::sendRequestToMaster() {
 }
 
 void BinPacking::sendBetterResult() {
-    printf("sendBetterResult,size=%zu\n",solution.size());
+    printf("sendBetterResult,size=%zu\n", solution.size());
     int command[2] = {4, (int) solution.size() + 2};
     int &sizeSend = command[1];
     MPI_Send(command, 2, MPI_INT, id_root, 0, MPI_COMM_WORLD);
     int *inputData = (int *) malloc(sizeSend * sizeof(int));
     inputData[0] = sizeSend - 2;
     inputData[1] = _UB.load();
-    std::copy(solution.begin(),solution.end(),&inputData[2]);
+    std::copy(solution.begin(), solution.end(), &inputData[2]);
 //    for(int i=0;i<command[1];++i){
 //        printf("%d,",inputData[i]);
 //    }
@@ -74,6 +76,12 @@ void BinPacking::sendBetterResult() {
     free(inputData);
 }
 
+ void BinPacking::updateUB(int UB) {
+    if (_UB > 0) {
+        while (UB < _UB)
+            _UB=UB;
+    }
+}
 
 int BinPacking::recvBetterResult(int size) {
     int *solutionArray = (int *) malloc(size * sizeof(int));
